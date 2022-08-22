@@ -1,0 +1,11 @@
+<h1>Result</h1>
+<h2> Your word is "<%= @word %>"</h2>
+
+<% if @word_check["found"] == true %>
+  <h3>Your word "<%= @word %>" was found!</h3>
+<% else%>
+  <h3>Sorry but "<%= @word %>" dose not seem to be a vaild English word...</h3>
+<% end %>
+
+
+<a href= "/new"> Play again!</a>
